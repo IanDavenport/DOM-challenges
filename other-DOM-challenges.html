@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="other-DOM-challenges.css">
+</head>
+<body>
+    
+<!--  DOM challenge 1: -->   
+<!-- Create a webpage with:
+A heading
+An input field
+A button
+When a user inputs some text into the input field and presses the button,
+the heading text should become the text which the user typed into the input field. -->
+    <!-- <h1 id="placeholder">I am the default text</h1>
+    <input id="input" type="text">
+    <button id="submit">Submit yout input</button> -->
+
+<!-- ##################################################################################### -->
+
+<!-- DOM challenge 2:
+Key code challenge
+Create a webpage that displays information about a pressed key. 
+The app should function similar to the one in these slides.
+You'll need to display:
+The key that was pressed
+The keycode of that key
+and the numeric keycode of the key (event.which)
+hint: The event listener should be attached to the document e.g. document.addEventListener...
+hint 2: Think about what event you're listening for -->
+
+
+   <!--  ##  Found this on W3 Schools and used what I found to make the below ##  --> 
+   <!-- <h1>Press a key on the keyboard in the input field.</h1>
+    <input type="text" onkeydown="keyPress(event)">
+    <p id="key1"></p>
+    <p id="key2"></p>
+    <p id="key3"></p> -->
+
+
+    <!--  ##  manually typing this one ##  -->
+    <!-- <h1>Press any key and I'll tell you more about it</h1>
+    <input type="text" onkeypress="keyPress(event)">
+    <h2 id="key1"></h2>
+    <h2 id="key2"></h2>
+    <h2 id="key3"></h2> -->
+      
+<!-- ##################################################################################### -->
+
+    <!-- DOM challenge 3:
+    Create a key pad:
+    Create a keypad with the numbers 0-9.
+    Users should be able to press each button and have the number show up on a screen above the keypad
+    Extension:
+    Turn your keypad into a calculator with simple operations (+, -, *, /)
+    Create functions for each operation.
+    Have the result of the operation replace the sum on the screen when the user presses a calculate button.
+    Hint:
+    Don't forget about your loops -->
+
+ 
+    
+
+    <h2 class="casio">Casio</h2>
+    <h2 id="display">0</h2>
+    <!-- 'placeholder' is the variable assigned to the display screen value -->
+   
+    <table>
+        <tr>
+        <td><input class="but" type="button" value=1 onclick="(1)"/> </td>
+        <td><input class="but" type="button" value=2 onclick="(2)"/> </td>
+        <td><input class="but" type="button" value=3 onclick="(3)"/> </td>
+        </tr>
+        <tr>
+        <td><input class="but" type="button" value=4 onclick="(4)"/> </td>
+        <td><input class="but" type="button" value=5 onclick="(5)"/> </td>
+        <td><input class="but" type="button" value=6 onclick="(6)"/> </td>
+        </tr>
+        <td><input class="but" type="button" value=7 onclick="(7)"/> </td>
+        <td><input class="but" type="button" value=8 onclick="(8)"/> </td>
+        <td><input class="but" type="button" value=9 onclick="(9)"/> </td>
+        </tr>
+        <tr>
+        <td><input class="blankbutton" type="button" value="_" onclick="(' ')"/> </td> 
+        <td><input class="but" type="button" value=0 onclick="(0)"/> </td>  
+        <td><input class="blankbutton" type="button" value="_" onclick="(' ')"/> </td>  
+        </tr>
+    </table>
+
+   
+
+
+
+   
+ 
+
+    <script src="./other-DOM-challenges.js"></script>
+</body>
+</html>
